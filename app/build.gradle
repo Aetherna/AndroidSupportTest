@@ -10,6 +10,7 @@ android {
         targetSdkVersion 21
         versionCode 1
         versionName "1.0"
+
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
@@ -22,6 +23,10 @@ android {
     packagingOptions {
         exclude 'LICENSE.txt'
     }
+
+    sourceSets {
+        androidTest.setRoot('src/androidTest')
+    }
 }
 
 dependencies {
@@ -32,3 +37,4 @@ dependencies {
     androidTestCompile 'com.android.support.test.espresso:espresso-core:2.0'
     androidTestCompile 'com.android.support.test:testing-support-lib:0.1'
 }
+

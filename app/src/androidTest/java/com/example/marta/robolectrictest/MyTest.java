@@ -14,6 +14,6 @@ public class MyTest {
 
     @Test
     public void testJUnit(){
-        Assert.assertTrue("jUnit works", true);
+        Assert.assertTrue("jUnit works", false);
     }
 }
